@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+  <link rel="stylesheet" href="kkk.css">
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Oswald&family=Roboto:wght@900&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Oswald&family=Roboto:wght@300;900&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Oswald&family=Yeseva+One&display=swap" rel="stylesheet">
+  <script type='text/javascript' src='scripts/respond.min.js'></script>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <nav id="skipTo">
+
+
+          <a href="#main" title="к главному контенту"></a>
+
+
+    </nav>
+
+
+    <h1 align="center" class="pouring">JavaScript</h1><br>
+    </nav>
+
+    <nav>
+    <ol class="hh">
+  <li><a href="#g1">Что такое JavaScript?</a></li>
+  <ul>
+    <li><a href="#g11">Почему JavaScript?</a></li>
+  </ul>
+  <li><a href="#g2">Что может JavaScript в браузере?</a></li>
+    <ul>
+      <li><a href="#g22">Чего НЕ может JavaScript в браузере?</a></li>
+    </ul>
+  <li><a href="#g3">Что делает JavaScript особенным?</a></li>
+  <li><a href="#g4">Справочники</a></li>
+</ol>
+    </nav>
+  </header>
+
+
+  <p align="center">
+  <div id="banner">
+
+  <img src="js.png" alt="логотип" width="200" height="200">
+</div>
+
+  </p>
+
+
+  <section id="main">
+
+<p align="center"> <a name="g1">Что такое JavaScript? </a> </p>
+
+
+<article>
+  Изначально JavaScript был создан, чтобы «сделать веб-страницы живыми».
+  Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы.
+  Скрипты распространяются и выполняются, как простой текст. Им не нужна специальная подготовка или компиляция для запуска.
+  Сегодня JavaScript может выполняться не только в браузере, но и на сервере или на любом другом устройстве, которое имеет специальную программу, называющуюся «движком» JavaScript.
+  У браузера есть собственный движок, который иногда называют «виртуальная машина JavaScript».
+  Разные движки имеют разные «кодовые имена».<br><br><br>
+  Например: <br>
+  1)V8 – в Chrome и Opera,<br>
+  2)SpiderMonkey – в Firefox, <br>
+  3)«ChakraCore» для Microsoft Edge, <br>
+  4)«Nitro» и «SquirrelFish» для Safari и т.д.<br>
+  Эти названия полезно знать, так как они часто используются в статьях для разработчиков.
+  </article>
+
+
+<br>
+<br>
+
+
+<p align="center"> <a name="g11">Почему JavaScript? </a></p>
+
+<article>
+  Когда JavaScript создавался, у него было другое имя – «LiveScript». Однако, язык Java был очень популярен в то время, и было решено, что позиционирование JavaScript как «младшего брата» Java будет полезно.
+  Со временем JavaScript стал полностью независимым языком со своей собственной спецификацией, называющейся ECMAScript, и сейчас не имеет никакого отношения к Java.
+</article>
+
+<br>
+<br>
+
+
+<p align="center"><img src="jss.jpg" alt="логотип" width="500" height="300"></p>
+<br>
+
+
+<p align="center"> <a name="g2">Что может JavaScript в браузере? </a></p>
+
+
+<article>
+  Современный JavaScript – это «безопасный» язык программирования. Он не предоставляет низкоуровневый доступ к памяти или процессору, потому что изначально был создан для браузеров, не требующих этого.
+  Возможности JavaScript сильно зависят от окружения, в котором он работает. Например, Node.JS поддерживает функции чтения/записи произвольных файлов, выполнения сетевых запросов и т.д.
+  В браузере для JavaScript доступно всё, что связано с манипулированием веб-страницами, взаимодействием с пользователем и веб-сервером.
+  Например, в браузере JavaScript может:
+  Добавлять новый HTML-код на страницу, изменять существующее содержимое, модифицировать стили.
+  Реагировать на действия пользователя, щелчки мыши, перемещения указателя, нажатия клавиш и т.д.
+</article>
+
+<br>
+<br>
+<br>
+
+
+<p align="center"> <a name="g22">Чего НЕ может JavaScript в браузере? </a></p>
+
+
+<article>
+  Возможности JavaScript в браузере ограничены ради безопасности пользователя. Цель заключается в предотвращении доступа недобросовестной веб-страницы к личной информации или нанесения ущерба данным пользователя.
+  Примеры таких ограничений включают в себя:<br>
+  1.JavaScript на веб-странице не может читать/записывать произвольные файлы на жёстком диске, копировать их или запускать программы. Он не имеет прямого доступа к системным функциям ОС.<br>
+  2.Различные окна/вкладки не знают друг о друге. Иногда одно окно, используя JavaScript, открывает другое окно. Но даже в этом случае JavaScript с одной страницы не имеет доступа к другой, если они пришли с разных сайтов.<br>
+  3.JavaScript может легко взаимодействовать с сервером, с которого пришла текущая страница. Но его способность получать данные с других сайтов/доменов ограничена.<br>
+</article>
+
+<br>
+<br>
+<br>
+
+<p align="center"> <a name="g3">Что делает JavaScript особенным? </a></p>
+
+<article>
+  Как минимум, три сильные стороны JavaScript:<br>
+  1.Полная интеграция с HTML/CSS.<br>
+  2.Простые вещи делаются просто.<br>
+  3.Поддерживается всеми основными браузерами и включён по умолчанию.<br>
+  JavaScript – это единственная браузерная технология, сочетающая в себе все эти три вещи.
+  Вот что делает JavaScript особенным. Вот почему это самый распространённый инструмент для создания интерфейсов в браузере.
+</article>
+
+<br>
+<p align="center"><img src="jjs.png" alt="логотип" width="300" height="200"></p><br>
+
+<p align="center"><a name="g4">Справочники</a></p>
+
+<article class="ff">
+     MDN (Mozilla) JavaScript Reference – это справочник с примерами и другой информацией.
+     Хороший источник для получения подробных сведений о функциях языка, методах встроенных объектов и так далее. <br>
+    Располагается по адресу <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference" target="_blank>"> https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference.</a>
+  <br>
+  MSDN – справочник от Microsoft, содержащий много информации, в том числе по JavaScript (который там часто обозначается как JScript).
+  Если вам нужно найти что-то специфическое по браузеру Internet Explorer, лучше искать там:<a href="http://msdn.microsoft.com/"> http://msdn.microsoft.com/.</a>
+</article>
+  </section>
+
+  <aside>
+
+<h2 align="center"><a id="nn" href="#" >Вверх</a></h2>
+    </aside>
+
+</div>
+
+<br>
+<br>
+
+</div>
+</body>
+</html>

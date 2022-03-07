@@ -1,0 +1,180 @@
+
+.pouring {
+  font-size: 60px;
+  line-height: 50px;
+  font-family: Roboto;
+  font-weight: 900;
+  position: relative;
+  background: #fffeff;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.pouring:before {
+  content: '';
+  position: absolute;
+  filter: blur(10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #F3E70DFF 1em, #000000 50%), repeating-linear-gradient(45deg, #0c0b0b, #f3f1d6 1em, #F3E70DFF 1em, #FFFFFFFF 50%);
+  background-size: 3em 3em, 2em 2em;
+  animation-name: ani;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes ani {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@media (max-width:690px) {
+  .pouring {
+    font-size: 20px;
+  }
+}
+.hh a,li{
+  color: black;
+  font-family: Roboto;
+  font-size: 19px;
+  margin-top: 1%;
+}
+article {
+  margin-left: 5%;
+  margin-right: 11%;
+  font-family: Oswald;
+  font-size: 16px;
+}
+.ff {
+  margin-bottom: 10%;
+}
+
+#nn{
+  font-size: 40px;
+  line-height: 50px;
+  font-family: Yeseva One;
+  font-weight: 900;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#nn:before {
+  content: '';
+  position: absolute;
+  filter: blur(10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p{
+  margin-left: 9%;
+  margin-right: 11%;
+  font-family: Oswald;
+  font-size: 28px;
+}
+
+
+
+----
+/*#wrapper {
+  width: 96%;
+  max-width: 920px;
+  margin: auto;
+  padding: 2%;
+}
+
+#main {
+  width: 60%;
+  margin-right: 5%;
+  float: left;
+}
+aside {
+  width: 35%;
+  float: right;
+}*/
+
+
+
+/* Logo  H1 */
+/*header h1 {
+  height: 98px;
+  width: 216px;
+  float: left;
+  display: block;
+  background: url(images/sllogo.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
+
+/*Навигация */
+header nav {
+  float: right;
+  margin-top: 40px;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 15px;
+}
+
+header nav ul li a {
+  text-decoration:none;
+  color:#333;
+}
+
+#skipTo {
+  display: none;
+}
+
+#skipTo li {
+  background: #ccc;
+}
+
+/* Главная картинка*/
+
+#banner {
+  float: left;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+#banner img {
+  width: 50%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 480px) {
+  #skipTo {
+    display: block;
+  }
+  header nav, #main, aside {
+    float: left;
+    clear: left;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  header nav li {
+    margin: 0;
+    background: #ccc;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  header nav a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
